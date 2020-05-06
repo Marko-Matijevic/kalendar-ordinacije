@@ -1,0 +1,8 @@
+:root{
+    --border: 1px solid #343a40 ;
+    --available: #fff;
+    --reserved: #ff0000;
+    --break: #fed8b1;
+    --not-working: #ccc;
+    --main-bg:#add8e6;
+}

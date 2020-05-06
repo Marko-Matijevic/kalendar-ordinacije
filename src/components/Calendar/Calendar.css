@@ -1,0 +1,130 @@
+@import url("../../styles/Variables.css");
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: var(--main-bg);
+}
+
+.square {
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+}
+
+.w-12-5 {
+    width: 12.5%;
+}
+
+.full-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.non-working-hour {
+    background-color: var(--not-working);
+}
+
+.working-hour {
+    background-color: var(--available);
+}
+
+.reserved-hour {
+    background-color: var(--reserved);
+}
+
+.break-hour {
+    background-color: var(--break);
+}
+
+.short-text {
+    display: none;
+}
+
+.navigation-item {
+    text-align: center;
+    padding: 0;
+    width: calc(100% / 8);
+}
+
+.navigation-item:not(:last-child) {
+    border-right: var(--border);
+}
+
+.table-row:not(:last-child) {
+    border-right: var(--border);
+}
+
+.calendar-table {
+    position: relative;
+}
+
+.calendar-colors {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Workours {
+    margin: 0;
+    list-style-type: none;
+    border-right: var(--border);
+    padding: 0;
+    text-align: center;
+}
+
+.workours-item {
+    border-bottom: var(--border);
+    height: calc(100% / 22);
+}
+
+.hour-cell {
+    height: calc(100% / 22);
+    width: 100%;
+    border-bottom: var(--border);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.hour-cell:last-child {
+    border-bottom: none;
+}
+
+
+/* MEDIA QUERIES */
+
+/* SM */
+@media (max-width: 576px) {
+
+    .short-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .full-text {
+        display: none;
+    }
+
+    .hour-cell, .navigation-item {
+        font-size: .6rem;
+    }
+
+}
+
+/* MD */
+@media (max-width: 720px) {
+
+    .hour-cell, .navigation-item {
+        font-size: .7rem;
+    }
+}
+
+
+/* LG */
+@media (max-width: 1200px) {
+    .schedule-border {
+        border-top: 1px solid #343a40;
+    }
+}
