@@ -1,4 +1,4 @@
-# Kalendar ordinace
+# Kalendar ordinacije
 Kalendar ordinacije made with React.js and typescript. 
 
 ## Instalation
@@ -7,17 +7,8 @@ When project is cloned use [npm](https://www.npmjs.com/) to install all the depe
 
 ```bash
 npm install
-```
-
-## Folder structure
-
- ├── src                               
-    ├── components 
-        ├── Calendar             #Displays the 7-day availability schedule
-        ├── ScheduleSelection    #Form for selecting available schedule and list of user's selected appointments.
-    ├── index.js                   
-
-## Starting the game
+```           
+## Starting the app
 
 ```bash
 npm start
